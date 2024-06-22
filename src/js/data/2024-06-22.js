@@ -19,140 +19,140 @@ dataSet[dataSetVersion].options = [
 dataSet[dataSetVersion].characterData = [
   {
     name: "Rinko Hanazawa",
-    img: "chars/Rinko.jpg",
+    img: "Rinko.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Junko",
-    img: "chars/Junko.jpg",
+    img: "Junko.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Dan Bi Han",
-    img: "chars/Danbi.jpg",
+    img: "Danbi.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Megumi Aihara",
-    img: "chars/Megumi.jpg",
+    img: "Megumi.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Chiyo Watanabe",
-    img: "chars/Chiyo.jpg",
+    img: "Chiyo.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Kanon Mistuboshi",
-    img: "chars/Kanon.jpg",
+    img: "Kanon.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Eimi Inagawa",
-    img: "chars/Eimi.jpg",
+    img: "Eimi.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Akira Hoshino",
-    img: "chars/Akira.jpg",
+    img: "Akira.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Yume Zhou",
-    img: "chars/Yume.jpg",
+    img: "Yume.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Anette Chanel",
-    img: "chars/Anette.jpg",
+    img: "Anette.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Kazue Ono",
-    img: "chars/Kazue.jpg",
+    img: "Kazue.jpg",
     opts: {
       Groups: ["IL"]
     }
   },
   {
     name: "Natsuki Ichinose",
-    img: "chars/Natsuki.jpg",
+    img: "Natsuki.jpg",
     opts: {
       Groups: ["KB"]
     }
   },
   {
     name: "Hayate Sumiyoshi",
-    img: "chars/Hayate.jpg",
+    img: "Hayate.jpg",
     opts: {
       Groups: ["KB"]
     }
   },
   {
     name: "Yuu Tobe",
-    img: "chars/Yuu.jpg",
+    img: "Yuu.jpg",
     opts: {
       Groups: ["KB"]
     }
   },
   {
     name: "Erika Horie",
-    img: "chars/Erika.jpg",
+    img: "Erika.jpg",
     opts: {
       Groups: ["PP"]
     }
   },
   {
     name: "Mariya Akiyama",
-    img: "chars/Mariya.jpg",
+    img: "Mariya.jpg",
     opts: {
       Groups: ["PP"]
     }
   },
   {
     name: "Kohaku Peterson",
-    img: "chars/Kohaku.jpg",
+    img: "Kohaku.jpg",
     opts: {
       Groups: ["PP"]
     }
   },
   {
     name: "Tae-eun Song",
-    img: "chars/Tae-eun.jpg",
+    img: "Tae-eun.jpg",
     opts: {
       Groups: ["PP"]
     }
   },
   {
     name: "Ai Nakajima",
-    img: "chars/Ai.jpg",
+    img: "Ai.jpg",
     opts: {
       Groups: ["PP"]
     }
   },
   {
     name: "Ume Takeuchi",
-    img: "chars/Ume.jpg",
+    img: "Ume.jpg",
     opts: {
       Groups: ["Ume"]
     }
