@@ -1,0 +1,160 @@
+dataSetVersion = "2024-06-22"; // Change this when creating a new data set version. YYYY-MM-DD format.
+dataSet[dataSetVersion] = {};
+
+dataSet[dataSetVersion].options = [
+  {
+    name: "Filter by Groups",
+    key: "Groups",
+    tooltip: "Check this to restrict to certain groups.",
+    checked: false,
+    sub: [
+      { name: "Interlunium", key: "IL" },
+      { name: "Kerberos", key: "KB" },
+      { name: "Pastel Project", key: "PP" },
+      { name: "Ume Takeuchi", key: "Ume" }
+    ]
+  }
+];
+
+dataSet[dataSetVersion].characterData = [
+  {
+    name: "Rinko Hanazawa",
+    img: "chars/Rinko.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Junko",
+    img: "chars/Junko.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Dan Bi Han",
+    img: "chars/Danbi.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Megumi Aihara",
+    img: "chars/Megumi.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Chiyo Watanabe",
+    img: "chars/Chiyo.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Kanon Mistuboshi",
+    img: "chars/Kanon.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Eimi Inagawa",
+    img: "chars/Eimi.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Akira Hoshino",
+    img: "chars/Akira.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Yume Zhou",
+    img: "chars/Yume.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Anette Chanel",
+    img: "chars/Anette.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Kazue Ono",
+    img: "chars/Kazue.jpg",
+    opts: {
+      Groups: ["IL"]
+    }
+  },
+  {
+    name: "Natsuki Ichinose",
+    img: "chars/Natsuki.jpg",
+    opts: {
+      Groups: ["KB"]
+    }
+  },
+  {
+    name: "Hayate Sumiyoshi",
+    img: "chars/Hayate.jpg",
+    opts: {
+      Groups: ["KB"]
+    }
+  },
+  {
+    name: "Yuu Tobe",
+    img: "chars/Yuu.jpg",
+    opts: {
+      Groups: ["KB"]
+    }
+  },
+  {
+    name: "Erika Horie",
+    img: "chars/Erika.jpg",
+    opts: {
+      Groups: ["PP"]
+    }
+  },
+  {
+    name: "Mariya Akiyama",
+    img: "chars/Mariya.jpg",
+    opts: {
+      Groups: ["PP"]
+    }
+  },
+  {
+    name: "Kohaku Peterson",
+    img: "chars/Kohaku.jpg",
+    opts: {
+      Groups: ["PP"]
+    }
+  },
+  {
+    name: "Tae-eun Song",
+    img: "chars/Tae-eun.jpg",
+    opts: {
+      Groups: ["PP"]
+    }
+  },
+  {
+    name: "Ai Nakajima",
+    img: "chars/Ai.jpg",
+    opts: {
+      Groups: ["PP"]
+    }
+  },
+  {
+    name: "Ume Takeuchi",
+    img: "chars/Ume.jpg",
+    opts: {
+      Groups: ["Ume"]
+    }
+  } 
+];
