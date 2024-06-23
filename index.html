@@ -1,55 +1,74 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="shortcut icon" href="src/assets/Site-logo.webp" type="image/x-icon">
-  <link rel="icon" href="src/assets/Site-logo.webp" type="image/x-icon">
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="og:site_name" content="Interlunium Character Sorting">
   <meta name="og:description" content="A simple website for sorting Interlunium characters in a formatted list.">
   <title>Interlunium Character Sorting</title>
 
-  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+  <link rel="shortcut icon" href="src/assets/Site-logo.webp" type="image/x-icon">
+  <link rel="icon" href="src/assets/Site-logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/styles.css">
 
-  <script src="src/js/data.js"></script>
-  <script src="src/js/data/2024-06-22.js"></script>
+  <script src="src/js/data.js" defer></script>
+  <script src="src/js/data/2024-06-22.js" defer></script>
+  <script src="src/js/html2canvas.min.js" defer></script>
+  <script src="src/js/lz-string.min.js" defer></script>
+  <script src="src/js/seedrandom.min.js" defer></script>
+  <script src="src/js/main.js" defer></script>
 
-  <script src="src/js/html2canvas.min.js"></script>
-  <script src="src/js/lz-string.min.js"></script>
-  <script src="src/js/seedrandom.min.js"></script>
-  <script src="src/js/main.js"></script>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'yfd1ezz',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
 </head>
-
 <body>
-<div class="container">
+
+  <div class="container">
 
     <div class="progress">
-        <span class="progressbattle"></span>
-        <div class="progressbar">
-            <div class="progressfill"><span class="progresstext"></span></div>
+      <span class="progressbattle"></span>
+      <div class="progressbar">
+        <div class="progressfill">
+          <span class="progresstext"></span>
         </div>
+      </div>
     </div>
 
     <div class="sorter">
-        <img src="src/assets/default-L.jpg" class="left sort image">
-
-        <div class="starting start button">Interlunium Character Sorter<br><br>Click to Start!</div>
-        <div class="starting load button">Load <span></span></div>
-
-        <div class="loading button"><div></div><span>Loading...</span></div>
-
-        <div class="sorting tie button">Tie</div>
-        <div class="sorting undo button">Undo</div>
-        <div class="sorting save button">Save Progress</div>
-
-        <div class="finished save button">Generate Result URL</div>
-        <div class="finished getimg button">Generate Image</div>
-        <div class="finished list button">Generate Text List</div>
-
-        <img src="src/assets/default-R.jpg" class="right sort image">
-
-        <div class="left sort text"><p></p></div>
-        <div class="right sort text"><p></p></div>
+      <img src="src/assets/default-L.jpg" class="left sort image" alt="Left Image">
+      <div class="starting start button">
+        <p class="title">Interlunium Character Sorter<br><br></p>
+        <p class="title">Click to Start!</p>
+      </div>
+      
+      <div class="starting load button">Load <span></span></div>
+      <div class="loading button">
+        <div></div><span>Loading...</span>
+      </div>
+      <div class="sorting tie button">Tie</div>
+      <div class="sorting undo button">Undo</div>
+      <div class="sorting save button">Save Progress</div>
+      
+      <div class="finished save button">Generate Result URL</div>
+      <div class="finished getimg button">Generate Image</div>
+      <div class="finished list button">Generate Text List</div>
+      
+      <img src="src/assets/default-R.jpg" class="right sort image" alt="Right Image">
+      <div class="left sort text">
+        <p></p>
+      </div>
+      <div class="right sort text">
+        <p></p>
+      </div>
     </div>
 
     <div class="options"></div>
@@ -58,28 +77,20 @@
     <div class="results"></div>
 
     <div class="info">
-        <a href="https://github.com/execfera/charasort/">Source Code</a> | <a href="?IwVmE4CZNAGSBs5YB8QA5zAMzoCwqzCxEmnDGVkkUXVHEON1lW0tPOn1s9suNyTGr3Y0G3QcN4SBQunNaCxC+pPLsuqreNob5MylKOtuk5RoWGlenhM63TInfyNSRS-aKuaDV+7bKjrJ8wbpClhyu1BZ6bnKG8R5m5kHOHly6gariITE2vvyRxpocZtqW8moxpZ7GGbmlmbGilZXe6j75CSGtLnbAhAxAA">Best Taste</a> | <a class="clearsave">Clear Save Data</a>
-        
-        <br><br>
-
-        <p>Sorter for Interlunium characters. Pick your sources, and hit the Start button.</p>
-        <p><strong>Certain options have details that you can hover to read.</strong></p>
-        <p>Click on the character you like better from the two, or tie them if you like them equally or don't know them.</p>
-
-        <br><br>
-
-        <p>Keyboard controls during sorting: H/LeftArrow (pick left) J/DownArrow (undo) K/UpArrow (tie) L/RightArrow (pick right) S (save progress).</p>
-        <p>Before sorting: S/Enter (start sorting) L (load progress).
-        <p>1/2/3 always correspond to the first/second/third buttons.</p>
-        
-        <br><br>
-
-        <p>Inspired by <a href="https://ahelloprojectfan.github.io/sorter/indexen.html">this site</a>. Art: <a href="https://www.knightzhang.net/"> Arucelli </a></p>
-
-        <br><br>
-
+      <a href="https://github.com/execfera/charasort/">Source Code</a> | <a href="?IwVmE4CZNAGSBs5YB8QA5zAMzoCwqzCxEmnDGVkkUXVHEON1lW0tPOn1s9suNyTGr3Y0G3QcN4SBQunNaCxC+pPLsuqreNob5MylKOtuk5RoWGlenhM63TInfyNSRS-aKuaDV+7bKjrJ8wbpClhyu1BZ6bnKG8R5m5kHOHly6gariITE2vvyRxpocZtqW8moxpZ7GGbmlmbGilZXe6j75CSGtLnbAhAxAA">Best Taste</a> | <a class="clearsave">Clear Save Data</a>
+      <br><br>
+      <p>Sorter for Interlunium characters. Pick your sources, and hit the Start button.</p>
+      <p><strong>Certain options have details that you can hover to read.</strong></p>
+      <p>Click on the character you like better from the two, or tie them if you like them equally or don't know them.</p>
+      <br><br>
+      <p>Keyboard controls during sorting: H/LeftArrow (pick left) J/DownArrow (undo) K/UpArrow (tie) L/RightArrow (pick right) S (save progress).</p>
+      <p>Before sorting: S/Enter (start sorting) L (load progress).</p>
+      <p>1/2/3 always correspond to the first/second/third buttons.</p>
+      <br><br>
+      <p>Inspired by <a href="https://ahelloprojectfan.github.io/sorter/indexen.html">this site</a>. Art: <a href="https://www.knightzhang.net/"> Arucelli </a></p>
+      <br><br>
     </div>
-</div>
-</body>
 
+  </div>
+</body>
 </html>
