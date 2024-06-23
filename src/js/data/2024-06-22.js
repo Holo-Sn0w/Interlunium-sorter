@@ -68,7 +68,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Akira Hoshino",
-    img: "iyi7Qeb.jpg",
+    img: "HF6er2E.jpg",
     opts: {
       Groups: ["IL"]
     }
